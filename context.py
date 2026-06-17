@@ -124,15 +124,15 @@ if __name__ == "__main__":
         print(f"Metadata: {chunk.metadata}")
         print(f"Content: {chunk.page_content}")
 
-#    embedding = embedding_model.embed_query("This is a test sentence.")
-#    print(f"Embedding length: {len(embedding)}")
-#    embedding = embedding_model.embed_query("This is a longer test sentence.")
-#    print(f"Embedding length: {len(embedding)}")
+    embedding = embedding_model.embed_query("This is a test sentence.")
+    print(f"Embedding length: {len(embedding)}")
+    embedding = embedding_model.embed_query("This is a longer test sentence.")
+    print(f"Embedding length: {len(embedding)}")
     
-#    retrieved_chunks = vector_store.similarity_search("A play written by Ryan Calais Cameron.")
-#    print(f"Query retrieved {len(retrieved_chunks)} chunks.")
+    retrieved_chunks = vector_store.similarity_search("A play written by Ryan Calais Cameron.")
+    print(f"Query retrieved {len(retrieved_chunks)} chunks.")
 
-#    for chunk in retrieved_chunks:
-#        print(f"Chunk content: {chunk.page_content}")
-#        print(f"Chunk metadata: {chunk.metadata}")
-#        print("-----")
+    for chunk in retrieved_chunks:
+        print(f"Chunk content: {chunk.page_content}")
+        print(f"Chunk metadata: {chunk.metadata}")
+        print("-----")
